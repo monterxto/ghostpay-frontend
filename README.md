@@ -11,20 +11,20 @@ Para rodar o projeto localmente e testá-lo, siga os passos abaixo:
 - Servidor backend rodando em `http://localhost:3001`.
 
 1. Clone o repositório:
-``bash
-git clone https://github.com/monterxto/ghostspay-frontend.git
-cd ghostspay-frontend
-``
+```bash
+git clone https://github.com/monterxto/ghostpay-frontend.git
+cd ghostpay-frontend
+```
 
 2. Instale as dependências:
-``bash
+```bash
 npm install
-``
+```
 
 3. Inicie o servidor de desenvolvimento:
-``bash
+```bash
 npm run dev
-``
+```
 
 4. Acesse `http://localhost:3000` no navegador.
 
