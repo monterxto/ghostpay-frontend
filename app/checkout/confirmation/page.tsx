@@ -5,7 +5,6 @@ import { useQuery } from "@tanstack/react-query";
 import { getPaymentDetails } from "@/services/api";
 import { ConfirmationSummary } from "@/components/organisms/ConfirmationSummary";
 import { ConfirmationTemplate } from "@/components/templates/ConfirmationTemplate";
-import { PaymentDetails } from "@/types/api";
 import { Identifier } from "@/components/molecules/Identifier";
 
 

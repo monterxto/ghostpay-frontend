@@ -1,6 +1,4 @@
 import { ReactNode } from "react";
-import Image from "next/image";
-import ghostPayLogo from "@/assets/ghostpay-logo.svg";
 import { HeaderPage } from "../molecules/HeaderPage";
 
 interface PixPaymentTemplateProps {

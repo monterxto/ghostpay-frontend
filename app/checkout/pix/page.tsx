@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/atoms/Button";
 import { PixPaymentSection } from "@/components/organisms/PixPaymentSection";
 import { PixPaymentTemplate } from "@/components/templates/PixPaymentTemplate";
-import { CheckoutResponse } from "@/types/api";
 import { approvePayment, getCheckoutDetails } from "@/services/api";
 import { useQuery } from "@tanstack/react-query";
 import { Identifier } from "@/components/molecules/Identifier";
