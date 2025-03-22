@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GhostsPay Frontend
 
-## Getting Started
+Este é o frontend da aplicação GhostsPay. Construído com **Next.js**, utiliza o **Atomic Design** para organizar componentes de forma modular e reutilizável.
 
-First, run the development server:
+## Executando o Projeto
 
-```bash
+Para rodar o projeto localmente e testá-lo, siga os passos abaixo:
+
+### Pré-requisitos
+- Node.js e npm instalados.
+- Servidor backend rodando em `http://localhost:3001`.
+
+1. Clone o repositório:
+``bash
+git clone https://github.com/monterxto/ghostspay-frontend.git
+cd ghostspay-frontend
+``
+
+2. Instale as dependências:
+``bash
+npm install
+``
+
+3. Inicie o servidor de desenvolvimento:
+``bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+``
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Acesse `http://localhost:3000` no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto recarrega automaticamente ao editar os arquivos.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura do Projeto
 
-## Learn More
+- **app/**: Páginas e layouts do Next.js (ex.: `checkout`, `confirmation`).
+- **components/**: Componentes organizados com Atomic Design:
+  - `atoms/`: Elementos básicos (ex.: `Button`, `Input`).
+  - `molecules/`: Combinações de átomos (ex.: `FormGroup`).
+  - `organisms/`: Estruturas complexas (ex.: `CheckoutForm`).
+  - `templates/`: Layouts de página (ex.: `CheckoutTemplate`).
+- **services/**: Chamadas de API (ex.: `api.ts`).
+- **styles/**: Estilos globais com Tailwind CSS.
+- **utils/**: Funções utilitárias (ex.: `formatCurrency`).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto usa **React Query** para gerenciar estado assíncrono e **TypeScript** para tipagem segura.
